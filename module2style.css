@@ -4,9 +4,11 @@
     box-sizing: border-box;
     }
 
-    .box { 
-        width: 700px;
+    .column { 
+        width:100%;
+        float: left;
     }
+
 
     h1 {
        text-align: center;
@@ -40,22 +42,36 @@
         color: #ffffff;
     }
 
-    .p-section {
-        height: 250px;
+    div .p-section {
+        width: 100%;
+        height: 100%;
         background-color: #3e2723;
         border: 1px solid black;
-        margin-bottom: 30px;
+        margin: 30px;
+        float: left;
         position: relative;
         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     }
-    @media (min-width: 992%) {
-        
+
+    div p {
+        margin: 50px;
+        display: flex;
+        text-align: justify;
+        float: left;
+       
     }
-    @media (min-width: 768%) and (max-width: 991%) {
-        
+    /* @media (min-width: 992px) {
+        .col-lg-4 col-md-6 col-sm-12  #container{
+         width: 100%;
+         height: 100%;
+        float: left;
+    }
+}
+    @media (min-width: 768px) and (max-width: 991px) {
+        .col-lg-4 col-md-6 col-sm-6 
     }
 
-    @media (max-width: 767%) {
+    @media (max-width: 767px) {
         
-    }
+    } */
  
